@@ -1,14 +1,22 @@
 import AppHeader from './components/AppHeader'
-import Grid from './components/Grid/Grid'
+import Card from './components/Card/Card'
+import Content from './components/Content'
+import Navigation from './components/Navigation'
 import getCharacters from './services/getCharacters'
 
 export default function App() {
-  const grid = Grid()
   const header = AppHeader('Harry Potter App')
+  const content = Content()
+  const navigation = Navigation()
 
-  grid.append(header)
+  document.body.append(header, content, navigation)
 
   getCharacters()
-    .then(data => console.log(data))
+    .then(data => createCards(data))
     .catch(error => console.log(error))
+
+  function createCards(characters) {
+    const cards = characters.map(character => Card(character.name))
+    content.append(...cards)
+  }
 }
