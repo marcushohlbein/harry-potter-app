@@ -1,7 +1,7 @@
 import createElement from '../../lib/createElement'
 import './SearchBar.css'
 
-export default function SearchBar(placeholder) {
+export default function SearchBar(placeholder, onTypeSearch) {
   const input = createElement('input', {
     type: 'search',
     className: 'SearchBar',
@@ -9,8 +9,18 @@ export default function SearchBar(placeholder) {
   })
 
   const iconSpan = createElement('span', { className: 'icon' })
-  input.append(iconSpan)
   const icon = createElement('i', { className: 'fas fa-search' })
+
+  input.append(iconSpan)
   iconSpan.append(icon)
+
+  input.addEventListener('input', e => {
+    const searchString = e.target.value
+    if (searchString.length >= 3) {
+      // console.log(searchString)
+      onTypeSearch(searchString)
+    }
+  })
+
   return input
 }
