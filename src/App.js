@@ -1,10 +1,15 @@
 import AppHeader from './components/AppHeader'
 import Card from './components/Card/Card'
+import Content from './components/Content/Content'
+import Navigation from './components/Navigation'
 import getCharacters from './services/getCharacters'
 
 export default function App() {
   const header = AppHeader('Harry Potter App')
-  document.body.append(header)
+  const content = Content()
+  const navigation = Navigation()
+
+  document.body.append(header, content, navigation)
 
   getCharacters()
     .then(data => createCards(data))
@@ -12,6 +17,6 @@ export default function App() {
 
   function createCards(characters) {
     const cards = characters.map(character => Card(character.name))
-    document.body.append(...cards)
+    content.append(...cards)
   }
 }

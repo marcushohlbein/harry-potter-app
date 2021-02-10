@@ -1,5 +1,6 @@
 .Card {
   color: var(--color-primary);
-  border-bottom: 1px solid;
+  margin: 15px;
+  border: 1px solid;
   padding: 12px;
 }
