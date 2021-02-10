@@ -1,8 +1,13 @@
 .Content {
-  background-color: var(--color-bg-primary);
   overflow-y: scroll;
   scroll-margin-bottom: 10px;
   display: grid;
   height: 100%;
   padding: 30px 20px 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.Content::-webkit-scrollbar {
+  display: none;
 }
