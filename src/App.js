@@ -1,6 +1,6 @@
 import AppHeader from './components/AppHeader'
 import Card from './components/Card/Card'
-import Content from './components/Content/Content'
+import Content from './components/Content'
 import Navigation from './components/Navigation'
 import getCharacters from './services/getCharacters'
 
