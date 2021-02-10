@@ -3,6 +3,7 @@ import Card from './components/Card/Card'
 import Content from './components/Content'
 import Grid from './components/Grid/Grid'
 import Navigation from './components/Navigation'
+import SearchBar from './components/SearchBar/SearchBar'
 import getCharacters from './services/getCharacters'
 
 export default function App() {
@@ -11,6 +12,8 @@ export default function App() {
 
   const header = AppHeader('Harry Potter App')
   const content = Content()
+  const searchbar = SearchBar('Search Character ...')
+  content.append(searchbar)
   const navigation = Navigation()
   grid.append(header, content, navigation)
 
