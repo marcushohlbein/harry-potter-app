@@ -1,0 +1,12 @@
+.Button {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.Button.active {
+  background: var(--color-white);
+  color: var(--color-black);
+}
