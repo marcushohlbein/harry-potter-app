@@ -1,9 +1,11 @@
 .Content {
   overflow-y: scroll;
   scroll-margin-bottom: 10px;
-  display: grid;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 20px;
+  height: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }

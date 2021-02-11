@@ -16,10 +16,7 @@ export default function SearchBar(placeholder, onTypeSearch) {
 
   input.addEventListener('input', e => {
     const searchString = e.target.value
-    if (searchString.length >= 3) {
-      // console.log(searchString)
-      onTypeSearch(searchString)
-    }
+    onTypeSearch(searchString)
   })
 
   return input
