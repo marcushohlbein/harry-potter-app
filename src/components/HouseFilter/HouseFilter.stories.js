@@ -1,10 +1,10 @@
 import HouseFilter from './HouseFilter'
-import { actions } from '@storybook/addon-actions'
+import { action } from '@storybook/addon-actions'
 
 export default {
   title: 'HouseFilter',
   component: HouseFilter,
 }
 
-const onFilterByHouse = actions('onFilterByHouse')
+const onFilterByHouse = action('onFilterByHouse')
 export const defaultHouseFilter = () => HouseFilter(onFilterByHouse)

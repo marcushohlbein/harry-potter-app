@@ -10,6 +10,7 @@ export default function HouseFilter(onFilterByHouse) {
       onFilterByHouse(house)
       button.toggle()
     })
+
     return button
   })
 

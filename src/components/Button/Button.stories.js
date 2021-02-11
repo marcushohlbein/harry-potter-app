@@ -4,4 +4,4 @@ export default {
   title: 'Button',
   component: Button,
 }
-export const defaultButton = () => Button('Griffindor')
+export const defaultButton = () => Button('Gryffindor').button
