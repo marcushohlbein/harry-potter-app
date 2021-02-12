@@ -41,9 +41,13 @@ export default function App() {
     createCards(filteredList)
   }
 
-  function onClick() {
+  function onClick(order) {
     const sortedList = characters.sort((a, b) => {
-      return a.name > b.name
+      if (order === 'ASC') {
+        return a.name > b.name
+      } else {
+        return a.name < b.name
+      }
     })
     createCards(sortedList)
   }
