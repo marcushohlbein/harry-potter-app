@@ -11,11 +11,11 @@ export default function IconButton(iconName, onClick) {
   el.addEventListener('click', () => {
     if (icon.className === 'fas fa-sort-alpha-down') {
       icon.className = 'fas fa-sort-alpha-down-alt'
-      onClick()
+      onClick('ASC')
     } else {
       icon.className = 'fas fa-sort-alpha-down'
+      onClick('DESC')
     }
-    onClick()
   })
 
   return el
