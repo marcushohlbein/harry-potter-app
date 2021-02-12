@@ -5,4 +5,4 @@ export default {
   component: IconButton,
 }
 
-export const defaultIconButton = () => IconButton('fa-filter')
+export const defaultIconButton = () => IconButton('filter')

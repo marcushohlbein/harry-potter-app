@@ -1,7 +1,10 @@
 .IconButton {
-  display: block;
-  color: white;
-  background: white;
-  height: 50px;
-  width: 50px;
+  font-size: 0.7em;
+  color: var(--color-grey);
+  background: var(--color-black);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  height: 35px;
+  width: 35px;
 }
