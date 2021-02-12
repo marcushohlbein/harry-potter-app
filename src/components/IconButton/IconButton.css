@@ -1,0 +1,13 @@
+.IconButton {
+  font-size: 1em;
+  color: var(--color-grey);
+  background: var(--color-black);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.IconButton:hover {
+  color: var(--color-black);
+  background: var(--color-grey);
+}
