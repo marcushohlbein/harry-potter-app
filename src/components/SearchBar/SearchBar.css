@@ -1,0 +1,18 @@
+.SearchBar {
+  background-color: var(--color-black);
+  color: var(--color-grey);
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.icon {
+  color: var(--color-grey);
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
