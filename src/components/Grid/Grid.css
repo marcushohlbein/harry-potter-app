@@ -8,3 +8,9 @@
   left: 0;
   right: 0;
 }
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}

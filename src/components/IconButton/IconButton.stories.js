@@ -5,4 +5,4 @@ export default {
   component: IconButton,
 }
 
-export const defaultIconButton = () => IconButton('filter')
+export const defaultIconButton = () => IconButton('sort-alpha-down')

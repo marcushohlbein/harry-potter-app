@@ -1,9 +1,9 @@
 import createElement from '../../lib/createElement'
 import './SearchBar.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 export default function SearchBar(placeholder, onTypeSearch) {
-  const el = createElement('el', {
+  const el = createElement('input', {
     type: 'search',
     className: 'SearchBar',
     placeholder: placeholder,

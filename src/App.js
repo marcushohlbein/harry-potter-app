@@ -2,7 +2,9 @@ import AppHeader from './components/AppHeader'
 import Card from './components/Card/Card'
 import Content from './components/Content'
 import Grid from './components/Grid/Grid'
+import IconButton from './components/IconButton/IconButton'
 import SearchBar from './components/SearchBar'
+import createElement from './lib/createElement'
 import getCharacters from './services/getCharacters'
 
 export default function App() {
@@ -11,8 +13,11 @@ export default function App() {
 
   const header = AppHeader('Harry Potter App')
   const content = Content()
+  const searchContainer = createElement('div', { className: 'searchContainer' })
   const searchbar = SearchBar('Search Character ...', onTypeSearch)
-  grid.append(header, searchbar, content)
+  const sortButton = IconButton('sort-alpha-down', onClick)
+  searchContainer.append(searchbar, sortButton)
+  grid.append(header, searchContainer, content)
 
   const characters = []
 
@@ -34,5 +39,12 @@ export default function App() {
       character.name.toLowerCase().includes(searchString.toLowerCase())
     )
     createCards(filteredList)
+  }
+
+  function onClick() {
+    const sortedList = characters.sort((a, b) => {
+      return a.name > b.name
+    })
+    createCards(sortedList)
   }
 }
