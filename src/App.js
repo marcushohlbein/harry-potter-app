@@ -30,7 +30,6 @@ export default function App() {
   }
 
   function onTypeSearch(searchString) {
-    console.log(searchString)
     const filteredList = characters.filter(character =>
       character.name.toLowerCase().includes(searchString.toLowerCase())
     )

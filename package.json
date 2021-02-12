@@ -54,12 +54,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuefische/javascript-app-template.git"
+    "url": "git@github.com:marcushohlbein/harry-potter-app.git"
   },
   "bugs": {
-    "url": "https://github.com/neuefische/javascript-app-template/issues"
+    "url": "https://github.com/marcushohlbein/harry-potter-app/issues"
   },
-  "homepage": "https://github.com/neuefische/javascript-app-template#readme",
+  "homepage": "https://github.com/marcushohlbein/harry-potter-app#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2"
   }
